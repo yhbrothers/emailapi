@@ -1,0 +1,8 @@
+{
+    "name": "Nodejs mail server",
+    "description": "A Node.js api app using Express for email service",
+    "repository": "https://github.com/yhbrothers/emailapi.git",
+    "logo": "http://node-js-sample.herokuapp.com/node.svg",
+    "keywords": ["node","express", "email"],
+    "image": "heroku/nodejs"
+}
