@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
-var port = process.env.port || 3000
+var port = process.env.port;
 
 //View engine setup
 app.engine('handlebars', exphbs());
