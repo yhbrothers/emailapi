@@ -22,9 +22,9 @@ app.use('/public',express.static(path.join(__dirname, 'public')));
 
 
 app.get('/',(req, res)=>{
-    //res.render('contact');
+    res.render('contact');
     //res.rander('index');
-    res.send('Hello world');
+    //res.send('Hello world');
 
 
 });
@@ -80,5 +80,5 @@ app.post('/send',(req, res)=>{
 });
 
 app.listen(port, ()=>{
-    console.log('Service started v1.0.1....');
+    console.log('Service started v1.0.2....');
 })
