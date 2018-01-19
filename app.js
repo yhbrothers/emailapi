@@ -79,5 +79,5 @@ app.post('/send',(req, res)=>{
 });
 
 app.listen(port, ()=>{
-    console.log('Service started ....');
+    console.log('Service started v1.0.0....');
 })
