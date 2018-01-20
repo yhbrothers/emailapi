@@ -47,18 +47,19 @@ app.post('/send',(req, res)=>{
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         host: 'mail.anaxanet.com',
+        //host: 'ml01.anaxanet.com',
         port: 25,
         secure: false, // true for 465, false for other ports
         auth: {
             user: 'noreply@mylocal.help', // generated ethereal user
             pass: 'Miao196309$'  // generated ethereal password
         }
-        /*
+      
         ,
         tls:{
             rejectUnauthorized: false
         }
-        */
+      
     });
 
     // setup email data with unicode symbols
@@ -83,5 +84,5 @@ app.post('/send',(req, res)=>{
 });
 
 app.listen(port, ()=>{
-    console.log('Service started v1.0.5....');
+    console.log('Service started v1.0.6....');
 })
